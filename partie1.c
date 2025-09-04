@@ -7,7 +7,7 @@ int main() {
  scanf("%d",&nbr_etudiant);
  }while(nbr_etudiant>30);
  int etudiant[nbr_etudiant];
- int i,Somme;
+ int i,Somme,compteur;
  int note_elve,note_faible;
  float Moyenne;
  printf("entrer les elements du tableau : \n");
@@ -48,10 +48,11 @@ if(etudiant[i]<10){
 }
 printf("combein etudiant valide : \n");
 for(i=0;i<nbr_etudiant;i++){
-    if(etudaint[i]>=10){
+    if(etudiant[i]>=10){
+        compteur++;
         
     }
 }
-
+   printf("nbr etudiant valid : %d",compteur);
        return 0;
 }
