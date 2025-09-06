@@ -1,4 +1,8 @@
 #include <stdio.h>
+float calculerMoyenne(int notes[], int n);
+int trouverMax(int notes[], int n);
+int trouverMin(int notes[], int n);
+int compterReussites(int notes[], int n);
 
 int main() {
  int nbr_etudiant;
@@ -7,7 +11,7 @@ int main() {
  scanf("%d",&nbr_etudiant);
  }while(nbr_etudiant>30);
  int etudiant[nbr_etudiant];
- int i,Somme,compteur;
+ int i,Somme,compteur=0;
  int note_elve,note_faible;
  float Moyenne;
  printf("entrer les elements du tableau : \n");
@@ -40,12 +44,7 @@ Moyenne = Somme/nbr_etudiant;
 printf("la sommme  = %d\n",Somme);
 printf("la moyenne = %.2f \n",Moyenne);
 
-for(i=0;i<nbr_etudiant;i++){
-if(etudiant[i]<10){
-    printf("etudiant %d no valide \n",i);
-}else
-    printf("etudiant %d valide \n",i);
-}
+
 printf("combein etudiant valide : \n");
 for(i=0;i<nbr_etudiant;i++){
     if(etudiant[i]>=10){
