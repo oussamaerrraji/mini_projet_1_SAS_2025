@@ -4,19 +4,15 @@
 int main(){
     char chaine1[30];
     char chaine2[30];
-
+    int resultat;
     printf("entrer cracter de chaine1 : ");
     scanf(" %s",chaine1);
     printf("entrer cracter de chaine2 : ");
     scanf(" %s",chaine2);
-
-    if(chaine1[30]==chaine2[30]){
-        printf("la deux chaine sont egales \n");
-    }else{
-        printf("la deux chaine sont differantes \n");
-    }
-    strcat(chaine1,chaine2);
-    printf("%s",chaine1);
-    
+    resultat = strcmp(chaine1,chaine2);
+        if(resultat==0){
+            printf("les deux chaine egales ");
+        }else
+        printf("les deux chaine defferants ");
     return 0;
 }
