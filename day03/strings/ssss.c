@@ -10,8 +10,8 @@ int main(){
      printf("entrer chaine caracter : ");  
      fgets(chaine,sizeof(chaine),stdin);
      for(int i=0;i<strlen(chaine);i++){
-        if(chaine[i]>=97 || chaine<=122){
-            chaine[i]+=32;
+        if(chaine[i]>='a' || chaine<='z'){
+            chaine[i]-=32;
         }
      }
      printf("M %s",chaine);
